@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com'
+                git branch: 'main', url: 'https://github.com/ritobrotoram-ai/demo-spring-boot.git'
             }
         }
         stage('Build & Test') {
