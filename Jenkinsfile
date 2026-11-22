@@ -20,8 +20,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                // Replace this with your actual deployment step (e.g., Docker, SCP, or systemd restart)
-                echo 'Build complete! Ready to deploy target/*.jar'
+#                // Replace this with your actual deployment step (e.g., Docker, SCP, or systemd restart)
+#                echo 'Build complete! Ready to deploy target/*.jar'
+                sh 'sudo systemctl restart springboot-app'
             }
         }
     }
